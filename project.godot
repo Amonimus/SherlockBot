@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="AiSandbox"
+run/main_scene="res://world.tscn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=640
+window/dpi/allow_hidpi=false
+window/ios/allow_high_refresh_rate=false
+window/ios/hide_home_indicator=false
+window/ios/hide_status_bar=false
+window/ios/suppress_ui_gesture=false
+
+[physics]
+
+common/physics_ticks_per_second=240
+
+[rendering]
+
+textures/vram_compression/import_s3tc_bptc=false
+environment/defaults/default_clear_color=Color(1, 1, 1, 1)

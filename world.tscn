@@ -1,0 +1,1946 @@
+[gd_scene load_steps=10 format=3 uid="uid://56hai357vbky"]
+
+[ext_resource type="Script" path="res://Bot.gd" id="1_4sf7k"]
+[ext_resource type="Script" path="res://world.gd" id="1_65y42"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f0u5m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_duif8"]
+albedo_color = Color(0.294118, 0.294118, 0.294118, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k844n"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hl80"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="Environment" id="Environment_6epvr"]
+background_energy_multiplier = 0.25
+reflected_light_source = 1
+volumetric_fog_albedo = Color(0, 0, 0, 1)
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_lknys"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1d0j"]
+albedo_color = Color(1, 0, 1, 1)
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_65y42")
+
+[node name="Floor" type="Node3D" parent="."]
+
+[node name="FloorTile" type="CSGBox3D" parent="Floor"]
+transparency = 1.0
+
+[node name="FloorTile2" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile3" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile4" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile5" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile6" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile7" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile8" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile9" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile10" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile11" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile12" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile14" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile15" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile16" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile17" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile18" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile19" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile20" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile21" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile22" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile23" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile24" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile25" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile26" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile27" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile28" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile29" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile30" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile31" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile32" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile35" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile36" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile37" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile38" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile39" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile40" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile41" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile42" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile43" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile44" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile45" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile46" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile47" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile48" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile49" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile50" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile51" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile52" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile53" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile54" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile55" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -3)
+transparency = 1.0
+
+[node name="FloorTile56" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile57" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -3)
+transparency = 1.0
+
+[node name="FloorTile58" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile59" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile60" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile61" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile62" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile63" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile64" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile65" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile66" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile67" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile68" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile69" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile70" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile71" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile72" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile13" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile73" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile74" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile75" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile76" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile77" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile78" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile79" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile80" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile81" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile82" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile83" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile84" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile85" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile86" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile87" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile88" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile89" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile90" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 4)
+transparency = 1.0
+
+[node name="FloorTile91" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 3)
+transparency = 1.0
+
+[node name="FloorTile92" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile93" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile94" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -1)
+transparency = 1.0
+
+[node name="FloorTile95" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -2)
+transparency = 1.0
+
+[node name="FloorTile96" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile97" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 2)
+transparency = 1.0
+
+[node name="FloorTile98" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 1)
+transparency = 1.0
+
+[node name="FloorTile99" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 0)
+transparency = 1.0
+
+[node name="FloorTile100" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile101" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile102" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+transparency = 1.0
+
+[node name="FloorTile103" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile104" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -3)
+transparency = 1.0
+
+[node name="FloorTile105" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile106" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -3)
+transparency = 1.0
+
+[node name="FloorTile107" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile108" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile109" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile110" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile111" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile112" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile113" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile114" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -6)
+transparency = 1.0
+
+[node name="FloorTile115" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile116" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile117" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile118" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile119" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile120" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile121" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile122" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile123" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile124" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile125" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile128" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile129" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile130" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile131" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile132" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile133" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile134" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile135" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile136" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile137" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile138" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile139" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile140" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile141" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile142" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -6)
+transparency = 1.0
+
+[node name="FloorTile143" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+transparency = 1.0
+
+[node name="FloorTile144" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile145" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile146" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile147" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+transparency = 1.0
+
+[node name="FloorTile148" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
+transparency = 1.0
+
+[node name="FloorTile149" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile150" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5)
+transparency = 1.0
+
+[node name="FloorTile151" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile152" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile153" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -7)
+transparency = 1.0
+
+[node name="FloorTile154" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -8)
+transparency = 1.0
+
+[node name="FloorTile155" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile156" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile157" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile158" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile159" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile160" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile161" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile162" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile163" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile164" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile165" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
+transparency = 1.0
+
+[node name="FloorTile168" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile169" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile170" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile171" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile166" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile167" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -10)
+transparency = 1.0
+
+[node name="FloorTile172" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -9)
+transparency = 1.0
+
+[node name="FloorTile173" type="CSGBox3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -10)
+transparency = 1.0
+
+[node name="Walls" type="Node3D" parent="."]
+
+[node name="WallTile" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile2" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile2"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile2"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile3" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile3"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile3"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile4" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile4"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile4"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile5" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile5"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile5"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile6" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile6"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile6"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile7" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile7"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile7"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile8" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile8"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile8"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile9" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile9"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile9"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile10" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile10"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile10"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile11" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile11"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile11"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile12" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile12"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile12"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile13" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile13"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile13"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile14" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile14"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile14"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile15" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile15"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile15"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile16" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile16"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile16"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile17" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile17"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile17"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile18" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile18"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile18"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile19" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile19"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile19"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile20" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile20"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile20"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile21" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile21"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile21"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile22" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile22"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile22"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile23" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile23"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile23"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile24" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile24"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile24"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile25" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile25"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile25"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile26" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile26"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile26"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile27" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile27"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile27"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile28" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile28"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile28"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile29" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, 4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile29"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile29"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile31" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile31"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile31"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile32" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile32"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile32"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile33" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile33"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile33"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile34" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile34"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile34"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile35" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile35"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile35"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile36" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile36"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile36"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile37" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile37"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile37"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile38" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile38"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile38"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile30" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile30"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile30"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile39" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile39"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile39"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile40" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile40"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile40"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile41" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile41"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile41"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile42" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile42"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile42"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile43" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile43"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile43"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile44" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile44"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile44"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile45" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile45"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile45"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile46" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile46"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile46"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile47" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile47"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile47"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile48" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile48"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile48"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile49" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile49"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile49"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile50" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile50"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile50"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile51" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile51"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile51"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile52" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile52"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile52"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile53" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile53"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile53"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile54" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile54"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile54"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile55" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile55"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile55"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile56" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile56"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile56"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile57" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile57"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile57"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile58" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile58"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile58"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile59" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile59"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile59"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile60" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile60"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile60"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile61" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile61"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile61"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile62" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile62"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile62"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile63" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile63"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile63"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile64" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile64"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile64"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile65" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile65"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile65"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile66" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile66"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile66"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile67" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile67"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile67"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile68" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile68"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile68"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile69" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile69"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile69"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile70" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile70"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile70"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile71" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile71"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile71"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile72" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile72"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile72"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile73" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile73"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile73"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile74" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile74"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile74"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile75" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile75"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile75"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile76" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile76"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile76"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile77" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile77"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile77"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile78" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile78"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile78"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile79" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile79"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile79"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile80" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile80"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile80"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile81" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile81"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile81"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile82" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile82"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile82"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile83" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile83"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile83"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile84" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile84"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile84"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile85" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, -5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile85"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile85"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile86" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile86"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile86"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile87" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile87"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile87"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile88" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile88"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile88"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile89" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile89"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile89"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile90" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile90"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile90"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile91" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile91"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile91"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile92" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile92"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile92"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile93" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile93"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile93"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile94" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile94"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile94"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile95" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile95"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile95"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile96" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile96"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile96"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile97" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile97"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile97"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile98" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile98"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile98"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile99" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile99"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile99"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile100" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile100"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile100"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile101" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile101"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile101"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile102" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -6)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile102"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile102"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile103" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile103"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile103"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile104" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile104"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile104"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile105" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile105"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile105"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile106" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile106"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile106"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile107" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile107"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile107"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile108" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile108"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile108"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile109" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile109"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile109"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile110" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile110"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile110"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile111" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile111"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile111"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile112" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -7)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile112"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile112"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile113" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -8)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile113"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile113"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile114" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile114"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile114"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile115" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile115"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile115"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile116" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, -9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile116"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile116"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile117" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile117"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile117"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile118" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -9)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile118"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile118"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile119" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile119"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile119"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="WallTile120" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/WallTile120"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Walls/WallTile120"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_duif8")
+
+[node name="Bot" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material = SubResource("StandardMaterial3D_k844n")
+script = ExtResource("1_4sf7k")
+
+[node name="RayCast3D" type="RayCast3D" parent="Bot"]
+target_position = Vector3(0, 0, 10)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Bot"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.5)
+material = SubResource("StandardMaterial3D_6hl80")
+
+[node name="WorldCamera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 13, -3)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6epvr")
+camera_attributes = SubResource("CameraAttributesPractical_lknys")
+
+[node name="CollisionCheckGroup" type="Node3D" parent="."]
+
+[node name="Paths" type="Node3D" parent="."]
+
+[node name="PathTree" type="Node3D" parent="."]
+
+[node name="DisplayText" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Goal" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Goal"]
+shape = SubResource("BoxShape3D_f0u5m")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Goal"]
+transparency = 1.0
+material = SubResource("StandardMaterial3D_p1d0j")
